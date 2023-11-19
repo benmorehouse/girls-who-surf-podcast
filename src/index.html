@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Podcast</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .podcast-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Your Podcast</h1>
+    </div>
+
+    <div class="podcast-container">
+        <h2>Latest Episodes</h2>
+
+        <!-- Example podcast episode -->
+        <div class="podcast-episode">
+            <h3>Episode 1: The Beginning</h3>
+            <p>This is the first episode of our podcast...</p>
+            <audio controls>
+                <source src="path/to/your/episode1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- Repeat the above block for each episode -->
+
+    </div>
+
+    <div class="footer">
+        <p>© 2023 Your Podcast Name</p>
+    </div>
+</body>
+</html>
