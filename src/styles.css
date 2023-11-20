@@ -1,0 +1,94 @@
+/* CSS Reset + Basic Styling */
+body, h1, h2, h3, p { margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; }
+body { background-color: #f4f4f4; }
+
+/* Typography */
+h1 { font-size: 3rem; } /* Example size */
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+/* Button */
+.cta-button {
+	background-color: #0077b6; /* Updated color */
+	color: white;
+	padding: 15px 30px;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+	background-color: #0096c7; /* Slightly lighter color on hover */
+	cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+	h1 { font-size: 2.5rem; } /* Slightly smaller on mobile */
+	.hero-content { padding: 0 15px; }
+	/* Update other elements accordingly */
+}
+
+/* Top Page Styles */
+.top-page {
+	background: url('path/to/your/header-image.jpg') no-repeat center center/cover; /* Replace with your image path */
+	text-align: center;
+	padding: 4em 0;
+}
+
+/* For a gradient background instead of an image */
+/* .top-page { background: linear-gradient(to right, #006d77, #83c5be); } */
+
+.hero-content { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+
+.cta-button {
+	background-color: #ffddd2; /* Button color */
+	color: #005f73; /* Button text color */
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #eef7fa; /* Light ocean blue background */
+}
+.header {
+	background-color: #005f73; /* Darker ocean blue */
+	color: white;
+	text-align: center;
+	padding: 1em 0;
+}
+.about-us, .podcast-container {
+	width: 90%;
+	max-width: 800px; /* Maximum width */
+	margin: 20px auto;
+	padding: 20px;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.podcast-episode {
+	margin-bottom: 20px;
+}
+audio {
+	width: 100%;
+	margin-top: 10px;
+}
+.footer {
+	background-color: #005f73;
+	color: white;
+	text-align: center;
+	padding: 1em 0;
+}
+@media screen and (max-width: 600px) {
+	.about-us, .podcast-container {
+		width: 95%; /* More width for smaller screens */
+		padding: 15px;
+	}
+}
