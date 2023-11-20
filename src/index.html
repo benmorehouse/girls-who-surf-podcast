@@ -3,66 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Podcast</title>
+    <title>Girls Who Surf Podcast</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #eef7fa; /* Light ocean blue background */
         }
         .header {
-            background-color: #333;
+            background-color: #005f73; /* Darker ocean blue */
             color: white;
             text-align: center;
             padding: 1em 0;
         }
-        .podcast-container {
-            width: 80%;
+        .about-us, .podcast-container {
+            width: 90%;
+            max-width: 800px; /* Maximum width */
             margin: 20px auto;
             padding: 20px;
             background-color: white;
             border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         }
-        .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        .podcast-episode {
+            margin-bottom: 20px;
         }
         audio {
             width: 100%;
             margin-top: 10px;
         }
+        .footer {
+            background-color: #005f73;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        @media screen and (max-width: 600px) {
+            .about-us, .podcast-container {
+                width: 95%; /* More width for smaller screens */
+                padding: 15px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Welcome to Your Podcast</h1>
+        <h1>Girls Who Surf Podcast</h1>
+    </div>
+
+    <div class="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to the Girls Who Surf Podcast, where we dive into the world of surfing, ocean conservation, and the adventures of surfers around the globe...</p>
     </div>
 
     <div class="podcast-container">
         <h2>Latest Episodes</h2>
 
-        <!-- Example podcast episode -->
+        <!-- Episode 1 -->
         <div class="podcast-episode">
             <h3>Episode 1: The Beginning</h3>
-            <p>This is the first episode of our podcast...</p>
+            <p>In our first episode, we explore...</p>
             <audio controls>
-                <source src="path/to/your/episode1.mp3" type="audio/mpeg">
+                <source src="assets/dilan_interview.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
         </div>
 
-        <!-- Repeat the above block for each episode -->
+        <!-- Episode 2 -->
+        <div class="podcast-episode">
+            <h3>Episode 2: Riding the Waves</h3>
+            <p>Episode 2 dives into...</p>
+            <audio controls>
+                <source src="assets/emma_interview.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
 
+        <!-- Episode 3 -->
+        <div class="podcast-episode">
+            <h3>Episode 3: Surf Culture</h3>
+            <p>This episode covers...</p>
+            <audio controls>
+                <source src="assets/laurel_interview.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- Episode 4 -->
+        <div class="podcast-episode">
+            <h3>Episode 4: Challenges of the Sea</h3>
+            <p>In Episode 4, we discuss...</p>
+            <audio controls>
+                <source src="assets/sophia_b_interview.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- Episode 5 -->
+        <div class="podcast-episode">
+            <h3>Episode 5: Interviews with Pros</h3>
+            <p>Our fifth episode features...</p>
+            <audio controls>
+                <source src="assets/sophia_s_interview.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
     </div>
 
     <div class="footer">
-        <p>© 2023 Your Podcast Name</p>
+        <p>© 2023 Girls Who Surf Podcast</p>
     </div>
 </body>
+
 </html>
+
