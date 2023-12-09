@@ -64,6 +64,40 @@ body {
 	text-align: center;
 	padding: 1em 0;
 }
+
+.about-us blockquote {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light grey background */
+    border-left: 5px solid #0077b6; /* A blue accent line */
+    font-style: italic; /* Make the font italic */
+    line-height: 1.6; /* Double space line height */
+    text-indent: 20px; /* Indent text */
+}
+
+.about-us blockquote::before {
+    content: '“'; /* Add opening quote before the blockquote */
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+    color: #0077b6; /* Blue color to match the accent */
+}
+
+.about-us blockquote::after {
+    content: '”'; /* Add closing quote after the blockquote */
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-left: 0.25em;
+    vertical-align: -0.4em;
+    color: #0077b6;
+}
+
+.about-us p {
+    text-indent: 20px; /* Indent paragraphs */
+    margin-bottom: 1em; /* Add space after paragraphs */
+}
+
 .about-us, .podcast-container {
 	width: 90%;
 	max-width: 800px; /* Maximum width */
@@ -86,9 +120,104 @@ audio {
 	text-align: center;
 	padding: 1em 0;
 }
+
 @media screen and (max-width: 600px) {
 	.about-us, .podcast-container {
 		width: 95%; /* More width for smaller screens */
 		padding: 15px;
 	}
+}
+
+.header {
+    display: grid; /* Use grid layout */
+    grid-template-columns: auto 1fr auto; /* Three columns: left auto-width, center 1fr, right auto-width */
+    align-items: center; /* Align items vertically in the center */
+    justify-items: center; /* Center items horizontally */
+    background-color: #005f73; /* Darker ocean blue */
+    color: white;
+    padding: 1em 0;
+}
+
+/* header alignment */
+.header {
+    justify-self: start; /* Align the header image to the start of the grid */
+    font-size: 50px; /* Adjust the size of the emoji if needed */
+}
+
+.header-image-right {
+    margin-right: 40%; /* Space between the image and the side of the screen */
+}
+
+.header-image-left {
+    margin-left: 40%; /* Space between the image and the side of the screen */
+}
+
+.header h1 {
+    grid-column: 2 / 3; /* Place the header text in the center column */
+}
+
+.subscribe-form {
+    display: flex; /* Use flexbox to align children */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Align children horizontally in the center */
+    justify-content: center; /* Align children vertically in the center */
+    margin: 20px auto; /* Center the form on the page with automatic side margins */
+    padding: 20px; /* Add some padding around the form */
+    background-color: white; /* Optional: to distinguish the form from the background */
+    border-radius: 8px; /* Optional: rounded corners for the form */
+    max-width: 400px; /* Set a max-width to prevent the form from getting too wide */
+    width: 100%; /* Use the full width up to the max-width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for some depth */
+}
+
+/* Update input and button styles to match the centered design */
+.subscribe-form input[type=email], .subscribe-form button {
+    width: 80%; /* Set a width for your input and button */
+    margin: 10px 0; /* Add margin to the top and bottom */
+}
+
+/* Adjust button styles to match the input */
+.subscribe-form button {
+    padding: 12px 25px;
+    border-radius: 25px; /* Match the border-radius of the input */
+    font-size: 1rem;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Add responsiveness to the form */
+@media screen and (max-width: 768px) {
+    .subscribe-form {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: center;
+    }
+
+    .subscribe-form input, .subscribe-form button {
+        width: 90%; /* Adjust width for small screens */
+        margin-bottom: 10px; /* Add space between elements */
+    }
+}
+
+.contact-invite {
+    text-align: center; /* Center the button */
+    padding: 20px;
+}
+
+.contact-button {
+    background-color: #0077b6; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #005f73; /* Darken button color on hover for visual feedback */
+    cursor: pointer;
 }
